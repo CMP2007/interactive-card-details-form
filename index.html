@@ -6,46 +6,70 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Interactive card details form</title>
+  <title>Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalice.css">
+
+
 </head>
 <body>
+  <main>
+    <!-- cards -->
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <div class="card_1">
+      <img src="./images/card-logo.svg" alt="">
+      <div class="circle"></div>
+      <label for="*">0000 0000 0000 0000</label>
+      <label for="*">Jane Appleseed</label>
+      <label for="*">00/00</label>
+    </div>
 
-  000
+    <div class="card_2">
+      <label for="*">000</label>
+    </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+    <!-- form -->
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+    <section class="sect_1"></section>
 
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
+    <section class="sect_2">
+      <form id="form" class="form">
+        <label for="input_1">Cardholder Name</label>
+        <input type="text" placeholder="e.g. Jane Appleseed" id="input_1" aria-label="enter the owner's name">
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <label for="input_2">Card Number</label>
+        <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="input_2" aria-label="enter the card number">
+  
+        <label for="input_3">Exp. Date (MM/YY)</label>
+        <input type="text" placeholder="MM" id="input_3" aria-label="enter the month of expiration of the card">
+        <input type="text" placeholder="YY" id="input_4" aria-label="enter the year of expiration of the card">
+  
+        <label for="input_2">CVC</label>
+        <input type="text" placeholder="e.g. 123" id="input_2" aria-label="enter the Card Verification Value">
+
+        <input type="button" value="Confirm">
+      </form>
+    </section>
+
+    <!-- Completed state start -->
+
+    <section class="sect_3">
+      <img src="./images/icon-complete.svg" alt="">
+      <h1>Thank you!</h1>
+      <h4>We've added your card details</h4>
+      <input type="button" value=" Continue">
+    </section>
+
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+  </main>
+<script src="./script.js"></script>
+
 </body>
 </html>
