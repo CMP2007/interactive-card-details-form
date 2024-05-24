@@ -11,22 +11,29 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="normalice.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
   <main>
     <!-- cards -->
 
-    <div class="card_1">
-      <img src="./images/card-logo.svg" alt="">
-      <div class="circle"></div>
-      <label for="*">0000 0000 0000 0000</label>
-      <label for="*">Jane Appleseed</label>
-      <label for="*">00/00</label>
+    <div class="card_1 card">
+      <div>
+        <img src="./images/card-logo.svg" alt="" class="card-logo">
+      </div>
+      <label for="*" class="cardNumber">0000 0000 0000 0000</label>
+      <label for="*" class="cardName">JANE APPLESEED</label>
+      <label for="*" class="cardDate">00/00</label>
     </div>
 
-    <div class="card_2">
-      <label for="*">000</label>
+    <div class="card_2 card">
+      <div class="card_2_label">
+        <label for="*">000</label>
+      </div>
     </div>
 
     <!-- form -->
@@ -56,7 +63,7 @@
 
     <section class="sect_3">
       <img src="./images/icon-complete.svg" alt="">
-      <h1>Thank you!</h1>
+      <h1>THANK YOU!</h1>
       <h4>We've added your card details</h4>
       <input type="button" value=" Continue">
     </section>

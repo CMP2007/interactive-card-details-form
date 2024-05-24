@@ -1,2 +1,68 @@
+* {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+main{
+    border: solid black 2px;
+    width: 100%;
+    max-width: 376px;
+    margin: auto;
+    height: 45rem;
+}
+/************************************************ Cards**********************************************/
+.card{
+    position: absolute;
+    background-size: cover;
+    width: 16rem;
+    height: 8.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: hsl(0, 0%, 100%);
+}
+.card_1{
+    background-image: url(./images/bg-card-front.png);
+    transform: translate(1rem, 7rem);
+    z-index: 10;
+    
+}
+.card_2{
+    background-image: url(./images/bg-card-back.png);
+    transform: translate(4.5rem, 1.4rem);
+    z-index: 1;
+    text-align: right;
+    font-size: .55REM;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+}
+.card-logo{
+    width: 3rem;
+}
+.cardNumber{
+    display: block;
+    letter-spacing: .2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.cardName, .cardDate{
+    font-size:.6rem;
+    letter-spacing: .1rem;
+    font-weight: 300;
+}
+.cardDate{
+    margin-left: 6.5rem;
+}
+.card_2_label{
+    margin-top: 3.6rem;
+    margin-right: 1.3rem;
+}
+/************************************************ Form**********************************************/
+.sect_1{
+    background: url(./images/bg-main-mobile.png);
+    width: 100%;
+    height: 15rem;
+}
+
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
