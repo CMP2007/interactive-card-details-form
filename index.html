@@ -42,40 +42,57 @@
 
     <section class="sect_2">
       <form id="form" class="form">
-        <label for="input_1">Cardholder Name</label>
-        <input type="text" placeholder="e.g. Jane Appleseed" id="input_1" aria-label="enter the owner's name">
+        <label for="input_1">CARDHOLDER NAME</label>
+        <div class="borderInput" id="divInputBig">
+          <input type="text" placeholder="e.g. Jane Appleseed" class="bigInput" id="input_1" aria-label="enter the owner's name">
+        </div>
+        <label for="input_2">CARD NUMBER</label>
+        <div class="borderInput" id="divInputBig">
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" class="bigInput" id="input_2" aria-label="enter the card number">
+        </div>
+        <span class="alert alert1">Wrong format, numbers only</span>
   
-        <label for="input_2">Card Number</label>
-        <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="input_2" aria-label="enter the card number">
-  
-        <label for="input_3">Exp. Date (MM/YY)</label>
-        <input type="text" placeholder="MM" id="input_3" aria-label="enter the month of expiration of the card">
-        <input type="text" placeholder="YY" id="input_4" aria-label="enter the year of expiration of the card">
-  
-        <label for="input_2">CVC</label>
-        <input type="text" placeholder="e.g. 123" id="input_2" aria-label="enter the Card Verification Value">
+        <div class="formDiv">
+          <div class="childDiv_1">
+            <label for="input_3">EXP. DATE (MM/YY)</label>
+            <div class="contentInoutSmall">
+              <div class="borderInputSmall1">
+                <input type="text" placeholder="MM" class="smallInput" id="input_3" aria-label="enter the month of expiration of the card">
+              </div>
+              <div class="borderInputSmall2">
+                <input type="text" placeholder="YY" class="smallInput" id="input_4" aria-label="enter the year of expiration of the card">
+              </div>
+            </div>
+            <span class="alert">Can't be blank</span>
+          </div>
+    
+          <div class="childDiv_2">
+            <label for="input_5">CVC</label>
+            <div class="borderInputMed">
+              <input type="text" placeholder="e.g. 123" class="mediumInput" id="input_5" aria-label="enter the Card Verification Value">
+            </div>
+            <span class="alert">Can't be blank</span>
+          </div>
+        </div>
 
-        <input type="button" value="Confirm">
+        <input type="button" value="Confirm" class="button">
       </form>
     </section>
 
     <!-- Completed state start -->
 
     <section class="sect_3">
-      <img src="./images/icon-complete.svg" alt="">
-      <h1>THANK YOU!</h1>
-      <h4>We've added your card details</h4>
-      <input type="button" value=" Continue">
+      <img src="./images/icon-complete.svg" alt="" >
+      <h1 class="thanks">THANK YOU!</h1>
+      <h4 class="SubThanks">We've added your card details</h4>
+      <input type="button" value=" Continue" class="button">
     </section>
 
-
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-
   </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
 <script src="./script.js"></script>
 
 </body>

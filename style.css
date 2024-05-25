@@ -1,15 +1,19 @@
+html{
+    background-color: rgb(233, 231, 231);
+}
 * {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
-main{
-    border: solid black 2px;
-    width: 100%;
+main{   
     max-width: 376px;
     margin: auto;
-    height: 45rem;
+    height: max-content;
+    background-color: hsl(0, 0%, 100%);
+    padding-bottom: .5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 /************************************************ Cards**********************************************/
 .card{
@@ -63,6 +67,149 @@ main{
     width: 100%;
     height: 15rem;
 }
+/* .form{display: none;} */
+.form, .sect_3{
+    padding: 5rem 1.2rem 2rem 1.2rem;
+}
+.form{position: relative; z-index: 1;}
+.form label{
+    display: block;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: hsl(278, 68%, 11%);
+    margin-top: 1rem;
+}
+.form input, .sect_3 input{
+    margin: .5rem 0  0rem 0;
+    padding: .75rem;
+    border-radius: 0.4rem;
+    font-size: 1.1rem;
+    border: hsl(270, 3%, 87%) solid 0.1rem;
+    margin-bottom: .5rem;
+}
+.form input{
+    position: relative;
+    z-index: 20;
+}
+.form input:focus{
+    outline: none;
+}
+input::placeholder{color: hsl(270, 3%, 87%);}
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+/************border input name and number*****************/
+.borderInput::after {
+    content: "";
+    position: absolute;
+    transform: translate( -20.7rem, -0.05rem);
+    width: 20.75rem;
+    height: 3rem;
+    margin-top: .5rem;
+    background: linear-gradient(to right,   hsl(249, 99%, 64%), hsl(278, 94%, 30%)   );
+    border-radius: .45rem;
+    z-index: 10;
+  }
+.bigInput{width: 90%;}
+/*******************************************************/
+
+/************alerts ************************************/
+#input_2{margin-bottom: .5rem ;}
+.alert{
+    width: 15rem;
+    color: hsl(0, 100%, 66%);
+    font-size: .7rem;
+    font-weight: 500;
+    display: none;
+}
+#input_3{margin-bottom: .5rem;}
+#input_5{margin-bottom: .5rem;}
+/******************************************************/
+
+.formDiv{display: flex; margin-bottom: 1rem;}
+
+.childDiv_1{width: 13rem;}
+
+.contentInoutSmall{display: flex; flex-direction: row;}
+
+/************border input MM ***************************/
+.smallInput{width: 60%;}
+.borderInputSmall1::after{
+    content: "";
+    position: absolute;
+    transform: translate( -4.5rem, -0.05rem);
+    width: 4.56rem;
+    height: 3rem;
+    margin-top: .5rem;
+    background: linear-gradient(to right,   hsl(249, 99%, 64%), hsl(278, 94%, 30%)   );
+    border-radius: .45rem;
+    z-index: 10;
+}
+/******************************************************/
+
+/************border input YY *********r*****************/
+.borderInputSmall2::after{
+    content: "";
+    position: absolute;
+    transform: translate( .25rem, -3.94rem);
+    width: 4.6rem;
+    height: 3rem;
+    margin-top: .5rem;
+    background: hsl(0, 100%, 66%);
+    border-radius: .45rem;
+    z-index: 10;
+}
+/******************************************************/
+/************border input CVC**************************/
+.mediumInput{width: 80%;}
+.borderInputMed::after{
+    content: "";
+    position: absolute;
+    transform: translate( -10.5rem, -.05rem);
+    width: 10.6rem;
+    height: 3rem;
+    margin-top: .5rem;
+    background: hsl(0, 100%, 66%);
+    border-radius: .45rem;
+    z-index: 10;
+}
+/******************************************************/
+
+
+#input_4{margin-left: .3rem;}
+
+
+
+
+.childDiv_2{margin-left: .7rem;}
+
+
+.button{
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 3.5rem;
+    font-weight: 400;
+    margin-top: 10rem;
+}
+
+/************************************************ thanks section **********************************************/
+.sect_3{
+    color: hsl(278, 68%, 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+.thanks{
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+.SubThanks{
+    color: hsl(279, 6%, 55%);
+    margin: 0rem 0 3rem 0;
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 1rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
