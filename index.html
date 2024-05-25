@@ -15,79 +15,80 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap" rel="stylesheet">
 
-
 </head>
 <body>
   <main>
-    <!-- cards -->
+    <article>
+        <!-- cards -->
 
-    <div class="card_1 card">
-      <div>
-        <img src="./images/card-logo.svg" alt="" class="card-logo">
-      </div>
-      <label for="*" class="cardNumber">0000 0000 0000 0000</label>
-      <label for="*" class="cardName">JANE APPLESEED</label>
-      <label for="*" class="cardDate">00/00</label>
-    </div>
-
-    <div class="card_2 card">
-      <div class="card_2_label">
-        <label for="*">000</label>
-      </div>
-    </div>
-
-    <!-- form -->
-
-    <section class="sect_1"></section>
-
-    <section class="sect_2">
-      <form id="form" class="form">
-        <label for="input_1">CARDHOLDER NAME</label>
-        <div class="borderInput" id="divInputBig">
-          <input type="text" placeholder="e.g. Jane Appleseed" class="bigInput" id="input_1" aria-label="enter the owner's name">
+      <div class="card_1 card">
+        <div>
+          <img src="./images/card-logo.svg" alt="" class="card-logo">
         </div>
-        <label for="input_2">CARD NUMBER</label>
-        <div class="borderInput" id="divInputBig">
-          <input type="text" placeholder="e.g. 1234 5678 9123 0000" class="bigInput" id="input_2" aria-label="enter the card number">
+        <label for="*" class="cardNumber">0000 0000 0000 0000</label>
+        <label for="*" class="cardName">JANE APPLESEED</label>
+        <label for="*" class="cardDate">00/00</label>
+      </div>
+
+      <div class="card_2 card">
+        <div class="card_2_label">
+          <label for="*">000</label>
         </div>
-        <span class="alert alert1">Wrong format, numbers only</span>
-  
-        <div class="formDiv">
-          <div class="childDiv_1">
-            <label for="input_3">EXP. DATE (MM/YY)</label>
-            <div class="contentInoutSmall">
-              <div class="borderInputSmall1">
-                <input type="text" placeholder="MM" class="smallInput" id="input_3" aria-label="enter the month of expiration of the card">
-              </div>
-              <div class="borderInputSmall2">
-                <input type="text" placeholder="YY" class="smallInput" id="input_4" aria-label="enter the year of expiration of the card">
-              </div>
-            </div>
-            <span class="alert">Can't be blank</span>
+      </div>
+
+      <!-- form -->
+
+      <section class="sect_1"></section>
+
+      <section class="sect_2">
+        <form id="form" class="form">
+          <label for="input_1">CARDHOLDER NAME</label>
+          <div class="borderInput" id="divInputBig">
+            <input type="text" placeholder="e.g. Jane Appleseed" class="bigInput" id="input_1" aria-label="enter the owner's name">
           </div>
+          <label for="input_2">CARD NUMBER</label>
+          <div class="borderInput" id="divInputBig">
+            <input type="text" placeholder="e.g. 1234 5678 9123 0000" class="bigInput" id="input_2" aria-label="enter the card number">
+          </div>
+          <span class="alert alert1">Wrong format, numbers only</span>
     
-          <div class="childDiv_2">
-            <label for="input_5">CVC</label>
-            <div class="borderInputMed">
-              <input type="text" placeholder="e.g. 123" class="mediumInput" id="input_5" aria-label="enter the Card Verification Value">
+          <div class="formDiv">
+            <div class="childDiv_1">
+              <label for="input_3">EXP. DATE (MM/YY)</label>
+              <div class="contentInoutSmall">
+                <div class="borderInputSmall1">
+                  <input type="text" placeholder="MM" class="smallInput" id="input_3" aria-label="enter the month of expiration of the card">
+                </div>
+                <div class="borderInputSmall2">
+                  <input type="text" placeholder="YY" class="smallInput" id="input_4" aria-label="enter the year of expiration of the card">
+                </div>
+              </div>
+              <span class="alert">Can't be blank</span>
             </div>
-            <span class="alert">Can't be blank</span>
+      
+            <div class="childDiv_2">
+              <label for="input_5">CVC</label>
+              <div class="borderInputMed">
+                <input type="text" placeholder="e.g. 123" class="mediumInput" id="input_5" aria-label="enter the Card Verification Value">
+              </div>
+              <span class="alert">Can't be blank</span>
+            </div>
           </div>
-        </div>
 
-        <input type="button" value="Confirm" class="button">
-      </form>
-    </section>
+          <input type="button" value="Confirm" class="button">
+        </form>
+      </section>
 
-    <!-- Completed state start -->
+      <!-- Completed state start -->
 
-    <section class="sect_3">
-      <img src="./images/icon-complete.svg" alt="" >
-      <h1 class="thanks">THANK YOU!</h1>
-      <h4 class="SubThanks">We've added your card details</h4>
-      <input type="button" value=" Continue" class="button">
-    </section>
+      <section class="sect_3">
+        <img src="./images/icon-complete.svg" alt="" >
+        <h1 class="thanks">THANK YOU!</h1>
+        <h4 class="SubThanks">We've added your card details</h4>
+        <input type="button" value=" Continue" class="button">
+      </section>
 
+    </article>
   </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

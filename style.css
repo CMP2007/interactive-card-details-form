@@ -7,8 +7,8 @@ html{
   font-weight: 500;
   font-style: normal;
 }
-main{   
-    max-width: 376px;
+article{   
+    width: 376px;
     margin: auto;
     height: max-content;
     background-color: hsl(0, 0%, 100%);
@@ -119,7 +119,7 @@ input::placeholder{color: hsl(270, 3%, 87%);}
     color: hsl(0, 100%, 66%);
     font-size: .7rem;
     font-weight: 500;
-    display: none;
+   /* display: none;  */
 }
 #input_3{margin-bottom: .5rem;}
 #input_5{margin-bottom: .5rem;}
@@ -213,3 +213,153 @@ input::placeholder{color: hsl(270, 3%, 87%);}
 
 .attribution { font-size: 11px; text-align: center; margin-top: 1rem;}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+@media (min-width: 1090px) {
+    main{
+        width: 98vw;
+    }
+    article{   
+        width: 100%;
+        display: contents;
+        display: grid;
+        grid-template-columns: 31vw 40rem;
+    }
+    .sect_1{
+        background: url(./images/bg-main-desktop.png);
+        height: 55.3rem;
+    }
+    .form{
+        width: 21.5rem;
+        margin: 6rem 3rem 3rem 22vw ;
+    }
+    .card_1{
+        transform: translate(5.7rem, 8.5rem);
+    }
+    .card_2{
+        transform: translate(10.8rem, 24.5rem);
+    }
+    .card{
+        width:21.7rem;
+        height: 10.6rem;
+        padding: 1.6rem;
+    }
+    .card-logo{
+        width: 4.5rem;
+    }
+    .cardNumber{
+        margin-top: 3.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 0.15rem;
+    }
+    .cardName, .cardDate, .card_2_label{
+        font-size:.8rem;
+    }
+    .cardDate{
+        margin-left: 45%;
+    }
+    .card_2_label{
+        margin-top: 4.75rem;
+        margin-right: 1.4rem;
+    }
+    /************border input name and number*****************/
+    .borderInput::after {
+        transform: translate( -21.05rem, -0.05rem);
+        width: 21.15rem;
+        height: 3rem;
+    }
+    
+    /************border input YY *********r*****************/
+    .borderInputSmall2::after{
+        transform: translate( .2rem, -3.94rem);
+        width: 4.7rem;
+        height: 3rem;
+    }
+    /******************************************************/
+     /************border input CVC**************************/
+     .mediumInput{width: 80%;}
+     .borderInputMed::after{
+         transform: translate( -10.7rem, -.05rem);
+         width: 10.75rem;
+         height: 3rem;
+     }
+     /******************************************************/
+}
+
+@media (min-width:930px) and (max-width:1089px) {
+    main{
+        width: 98vw;
+    }
+    article{   
+        width: 100%;
+        display: contents;
+        display: grid;
+        grid-template-columns: 31vw 40rem;
+    }
+    .sect_1{
+        background: url(./images/bg-main-desktop.png);
+        height: 55.3rem;
+    }
+    .form{
+        width: 21.5rem;
+        margin: 6rem 3rem 3rem 22vw ;
+    }
+    .card_1{
+        transform: translate(.7rem, 8.5rem);
+    }
+    .card_2{
+        transform: translate(5.8rem, 24.5rem);
+    }
+    .card{
+        width:21.7rem;
+        height: 10.6rem;
+        padding: 1.6rem;
+    }
+    .card-logo{
+        width: 4.5rem;
+    }
+    .cardNumber{
+        margin-top: 3.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 0.15rem;
+    }
+    .cardName, .cardDate, .card_2_label{
+        font-size:.8rem;
+    }
+    .cardDate{
+        margin-left: 45%;
+    }
+    .card_2_label{
+        margin-top: 4.75rem;
+        margin-right: 1.4rem;
+    }
+    /************border input name and number*****************/
+    .borderInput::after {
+        transform: translate( -21rem, -0.05rem);
+        width: 21.05rem;
+        height: 3rem;
+    }
+
+    /************border input YY *********r*****************/
+    .borderInputSmall2::after{
+        transform: translate( .2rem, -3.94rem);
+        width: 4.7rem;
+        height: 3rem;
+    }
+    /******************************************************/
+    /************border input CVC**************************/
+    .mediumInput{width: 80%;}
+    .borderInputMed::after{
+        transform: translate( -10.7rem, -.05rem);
+        width: 10.8rem;
+        height: 3rem;
+    }
+    /******************************************************/
+
+    }
