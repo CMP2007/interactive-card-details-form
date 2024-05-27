@@ -9,7 +9,7 @@ html{
 }
 article{   
     width: 376px;
-    margin: auto;
+    margin: 3rem auto 0 auto;
     height: max-content;
     background-color: hsl(0, 0%, 100%);
     padding-bottom: .5rem;
@@ -147,6 +147,7 @@ input::placeholder{color: hsl(270, 3%, 87%);}
 /******************************************************/
 
 /************border input YY *********r*****************/
+.borderInputSmall2::after{  transform-origin: center; position: relative;}
 .borderInputSmall2::after{
     content: "";
     position: absolute;
@@ -347,7 +348,7 @@ input::placeholder{color: hsl(270, 3%, 87%);}
         
         /************border input YY *********r*****************/
         .borderInputSmall2::after{
-            transform: translate( .2rem, -3.94rem);
+            transform: translate( -4.6rem, -.05rem);
             width: 4.7rem;
             height: 3rem;
         }
