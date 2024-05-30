@@ -288,7 +288,7 @@ input::placeholder{color: hsl(270, 3%, 87%);}
 
     /************border input YY *********r*****************/
     .borderInputSmall2::after{
-        transform: translate( .2rem, -3.94rem);
+        transform: translate( -4.6rem, -.05rem);
         width: 4.7rem;
         height: 3rem;
     }

@@ -25,71 +25,13 @@ document.addEventListener("click", (event)=>{
     getYear()
     getCvc()  
 })
-
-/***************************************** event listeners border ************************************************** */
-
-input1.addEventListener("focus",()=>{
-    borderInput1.style.setProperty("--visibleNumber", "inline")
-})
-input1.addEventListener("blur",()=>{
-    if (input1.value) {
-        nameOk = true;
-    }
-    else { 
-        nameOk = false;
-    }
-    borderInput1.style.setProperty("--visibleNumber", "none")
-})
-
-
-input2.addEventListener("focus",()=>{
-    borderInput2.style.setProperty("--visibleNumber", "inline")
-})
-input2.addEventListener("blur",()=>{
-    if (numberOk == true && input2.value.length > 15 || input2.value.length == 0) {
-        borderInput2.style.setProperty("--visibleNumber", "none")
-    }
-})
-
-
-input3.addEventListener("focus",()=>{
-    borderInput3.style.setProperty("--visibleNumber", "inline")
-})
-input3.addEventListener("blur",()=>{
-    if (monthOk == true && input3.value.length == 2 || input3.value.length == 0) {
-        borderInput3.style.setProperty("--visibleNumber", "none")
-    }
-})
-
-
-input4.addEventListener("focus",()=>{
-    borderInput4.style.setProperty("--visibleNumber", "inline")
-})
-input4.addEventListener("blur",()=>{
-    if (yearOk == true && input4.value.length == 2 || input4.value.length == 0) {
-        borderInput4.style.setProperty("--visibleNumber", "none")
-    }
-})
-
-
-input5.addEventListener("focus",()=>{
-    borderInput5.style.setProperty("--visibleNumber", "inline")
-})
-input5.addEventListener("blur",()=>{
-    if (cvcOk == true && input5.value.length == 3 || input5.value.length == 0) {
-        borderInput5.style.setProperty("--visibleNumber", "none")   
-    }
-})
-
-
+/***************************************** functions get values ************************************************** */
 function getInput(event) {
     let input = event.target.id
     if (input.includes("input")) {
        id = input.slice(-1)
      }
 }
-
-/***************************************** functions get values ************************************************** */
 
 function getName() {
     if (id == "1") {
@@ -148,7 +90,55 @@ function getCvc() {
         })
     }
 }
+/***************************************** event listeners border ************************************************** */
+input1.addEventListener("focus",()=>{
+    borderInput1.style.setProperty("--visibleNumber", "inline")
+})
+input1.addEventListener("blur",()=>{
+    if (input1.value) {
+        nameOk = true;
+    }
+    else { 
+        nameOk = false;
+    }
+    borderInput1.style.setProperty("--visibleNumber", "none")
+})
 
+input2.addEventListener("focus",()=>{
+    borderInput2.style.setProperty("--visibleNumber", "inline")
+})
+input2.addEventListener("blur",()=>{
+    if (numberOk == true && input2.value.length > 15 || input2.value.length == 0) {
+        borderInput2.style.setProperty("--visibleNumber", "none")
+    }
+})
+
+input3.addEventListener("focus",()=>{
+    borderInput3.style.setProperty("--visibleNumber", "inline")
+})
+input3.addEventListener("blur",()=>{
+    if (monthOk == true && input3.value.length == 2 || input3.value.length == 0) {
+        borderInput3.style.setProperty("--visibleNumber", "none")
+    }
+})
+
+input4.addEventListener("focus",()=>{
+    borderInput4.style.setProperty("--visibleNumber", "inline")
+})
+input4.addEventListener("blur",()=>{
+    if (yearOk == true && input4.value.length == 2 || input4.value.length == 0) {
+        borderInput4.style.setProperty("--visibleNumber", "none")
+    }
+})
+
+input5.addEventListener("focus",()=>{
+    borderInput5.style.setProperty("--visibleNumber", "inline")
+})
+input5.addEventListener("blur",()=>{
+    if (cvcOk == true && input5.value.length == 3 || input5.value.length == 0) {
+        borderInput5.style.setProperty("--visibleNumber", "none")   
+    }
+})
 /********************************************* validate data ********************************************** */
 let alert1 = document.querySelector(".alert1");
 let alert2 = document.querySelector(".alert2");
@@ -163,12 +153,20 @@ function validateName() {
     if (input1.value) {
         borderInput1.style.setProperty("--borderColor", " linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%))");
     }
+    else{
+        borderInput1.style.setProperty("--borderColor", "hsl(0, 100%, 66%)");
+    }
 }
 
 function validateNumber(number) {
     let numberCheck =  Number(number)
         if (!isNaN(numberCheck) && input2.value.length) {
-            numberOk = true;
+            if (input2.value.length >15) {
+                numberOk = true;
+            }
+            else{
+                numberOk = false;
+            }
             alert1.style.setProperty("display", "none");
             borderInput2.style.setProperty("--borderColor", " linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%))");
         }
@@ -182,7 +180,12 @@ function validateNumber(number) {
 function validateMonth(month) {
     let monthCheck = Number(month);
     if (!isNaN(monthCheck) && input3.value.length) {
-        monthOk = true;
+        if (input3.value.length > 1) {
+            monthOk = true;
+        }
+        else{
+            monthOk = false;
+        }
         alert2.style.setProperty("display", "none");
         borderInput3.style.setProperty("--borderColor", " linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%))");
     }
@@ -195,7 +198,12 @@ function validateMonth(month) {
 function validateYear(year) {
     let yearCheck = Number(year);
     if (!isNaN(yearCheck) && input4.value.length) {
-        yearOk = true;
+        if (input4.value.length > 1) {
+            yearOk = true;   
+        }
+        else{
+            yearOk = false;
+        }
         alert2.style.setProperty("display", "none");
         borderInput4.style.setProperty("--borderColor", " linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%))");
     }
@@ -208,7 +216,12 @@ function validateYear(year) {
 function validateCvc(cvcValue) {
     let cvcCheck = Number(cvcValue);
     if (!isNaN(cvcCheck) && input5.value.length) {
-        cvcOk = true;
+        if (input5.value.length > 2) {
+            cvcOk = true;
+        }
+        else{
+            cvcOk = false;
+        }
         alert3.style.setProperty("display", "none");
         borderInput5.style.setProperty("--borderColor", " linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%))");
         console.log(cvcOk);
@@ -219,11 +232,7 @@ function validateCvc(cvcValue) {
         console.log(cvcOk)
     }
 }
-
-function alertLetters(letters) {
-    
-}
-/********************************************* buttons ********************************************** */
+/************************* confirm button ************************************** */
 const button = document.querySelector(".button");
 const form = document.querySelector(".sect_2");
 const thanks = document.querySelector(".sect_3");
@@ -237,7 +246,6 @@ button.addEventListener("click", ()=>{
         let errorData = [nameOk, numberOk, monthOk, yearOk, cvcOk];
         errorData.forEach(function(data) {
             let cont = errorData.findIndex(value => !value);
-            
             switch (cont){
                 case 0 :
                     borderInput1.style.setProperty("--visibleNumber", "inline");
@@ -262,16 +270,24 @@ button.addEventListener("click", ()=>{
                     borderInput5.style.setProperty("--visibleNumber", "inline")
                     borderInput5.style.setProperty("--borderColor", "hsl(0, 100%, 66%)");
                     break
-                default:
-                    console.log(cont);
             };
         });
-        }
+    }
 })
-
-/******************************* button continue *************************/
+/******************************* continue button *************************/
 const carryON = document.getElementById("continue");
 
 carryON.addEventListener("click", ()=>{
-    location.reload()
+    form.classList.remove("formOff");
+    thanks.classList.add("thanksOff");
+    input1.value = "";
+    input2.value = "";
+    input3.value = "";
+    input4.value = "";
+    input5.value = "";
+    cardName.innerHTML = "e.g. Jane Appleseed";
+    cardNumber.innerHTML = "0000 0000 0000 0000"
+    MM.innerHTML= "00"
+    YY.innerHTML="00"
+    cvc.innerHTML="000"
 })

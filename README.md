@@ -1,22 +1,24 @@
-# Frontend Mentor - Interactive card details form
+# Frontend Mentor - Interactive card details form solution
 
-![Design preview for the Interactive card details form coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw).
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this interactive card details form and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to: 
+Users should be able to:
 
 - Fill in the form and see the card details update in real-time
 - Receive error messages when the form is submitted if:
@@ -25,13 +27,46 @@ Your users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover, active, and focus states for interactive elements on the page
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### Screenshot
 
-### Expected behaviour
+![](./images/screenshot1.jpg.jpg)
+![](./images/screenshot2.jpg.jpg)
 
-- Update the details on the card as the user fills in the fields
-- Validate the form fields when the form is submitted
-- If there are no errors, display the completed state
-- Reset the form when the user clicks "Continue" on the completed state
 
-**⚠️ IMPORTANT ⚠️: When you create the live version of your project, we recommmend giving it a random name for the URL. This is because with it being a fake credit card form, some browsers will open a warning notice before people can access your project. So it's best to name the project something unrelated to credit cards so that browsers don't show the warning to people viewing your project.**
+### Links
+
+- Solution URL:(https://www.frontendmentor.io/solutions/interactive-card-details-form-solution-KoUJeVFM7N)
+- Live Site URL:(https://cmp2007.github.io/interactive-card-details-form/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+
+### What I learned
+
+The biggest obstacle I found in this design was the CSS styles, particularly with the data pseudo-element 'YY', since, unlike other pseudo-elements, the properties transform: translate in this way, it seemed that everything was down to the The reference element that uses these properties to position itself was being changed, causing the pseudo-element's position to be affected at times. However, I couldn't determine exactly what was causing this conflict. The solution I found was to clear the browser cache while working to force it to load the updated files again. However, the error persisted in some cases without me knowing why."
+
+```css
+.borderInputSmall2::after{
+            transform: translate( -4.6rem, -.05rem);
+            width: 4.7rem;
+            height: 3rem;
+        }
+```
+
+ If anyone knows what could have happened or if I misused their properties or syntax, I would appreciate it if you let me know. Likewise, any correction or suggestion is appreciated.
+
+
+### Continued development
+
+En este momento quiero seguir realizando retos y prácticas basadas en HTML, CSS y JS para desarrollar una buena base antes de continuar con mi camino de aprendizaje.
+
+## Author
+
+- Frontend Mentor - [@CMP2007](https://www.frontendmentor.io/profile/CMP2007)
