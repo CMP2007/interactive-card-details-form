@@ -26,7 +26,9 @@
           <img src="./images/card-logo.svg" alt="" class="card-logo">
         </div>
         <label for="*" class="cardNumber">0000 0000 0000 0000</label>
+       <div class="cardNameConteiner">
         <label for="*" class="cardName">JANE APPLESEED</label>
+       </div>
         <label for="*" class="cardDate"><span id="MM">00</span>/<span id="YY">00</span></label>
       </div>
 
@@ -43,12 +45,12 @@
       <section class="sect_2">
         <form id="form" class="form">
           <label for="input_1">CARDHOLDER NAME</label>
-          <div class="borderInput" id="divInputBig">
-            <input type="text" placeholder="e.g. Jane Appleseed" class="bigInput" id="input_1" aria-label="enter the owner's name">
+          <div class="borderInput" id="divInputBig1">
+            <input type="text" placeholder="e.g. Jane Appleseed" class="bigInput" id="input_1" aria-label="enter the owner's name" maxlength="15">
           </div>
           <label for="input_2">CARD NUMBER</label>
-          <div class="borderInput" id="divInputBig">
-            <input type="text" placeholder="e.g. 1234 5678 9123 0000" class="bigInput" id="input_2" aria-label="enter the card number">
+          <div class="borderInput" id="divInputBig2">
+            <input type="text" placeholder="e.g. 1234 5678 9123 0000" class="bigInput" id="input_2" aria-label="enter the card number" maxlength="16">
           </div>
           <span class="alert alert1">Wrong format, numbers only</span>
     
@@ -57,35 +59,35 @@
               <label for="input_3">EXP. DATE (MM/YY)</label>
               <div class="contentInoutSmall">
                 <div class="borderInputSmall1">
-                  <input type="text" placeholder="MM" class="smallInput" id="input_3" aria-label="enter the month of expiration of the card">
+                  <input type="text" placeholder="MM" class="smallInput" id="input_3" aria-label="enter the month of expiration of the card" maxlength="2">
                 </div>
                 <div class="borderInputSmall2">
-                  <input type="text" placeholder="YY" class="smallInput" id="input_4" aria-label="enter the year of expiration of the card">
+                  <input type="text" placeholder="YY" class="smallInput" id="input_4" aria-label="enter the year of expiration of the card" maxlength="2">
                 </div>
               </div>
-              <span class="alert">Can't be blank</span>
+              <span class="alert alert2">Can't be blank</span>
             </div>
       
             <div class="childDiv_2">
               <label for="input_5">CVC</label>
               <div class="borderInputMed">
-                <input type="text" placeholder="e.g. 123" class="mediumInput" id="input_5" aria-label="enter the Card Verification Value">
+                <input type="text" placeholder="e.g. 123" class="mediumInput" id="input_5" aria-label="enter the Card Verification Value" maxlength="3">
               </div>
-              <span class="alert">Can't be blank</span>
+              <span class="alert alert3">Can't be blank</span>
             </div>
           </div>
 
-          <input type="button" value="Confirm" class="button" id="ton">
+          <input type="button" value="Confirm" class="button">
         </form>
       </section>
 
       <!-- Completed state start -->
 
-      <section class="sect_3">
+      <section class="sect_3 thanksOff">
         <img src="./images/icon-complete.svg" alt="" >
         <h1 class="thanks">THANK YOU!</h1>
         <h4 class="SubThanks">We've added your card details</h4>
-        <input type="button" value=" Continue" class="button">
+        <input type="button" value=" Continue" class="button" id="continue">
       </section>
 
     </article>

@@ -1,3 +1,10 @@
+:root{
+    --visibleNumber : none;
+    --borderColor: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+}
+
+
+
 html{
     background-color: rgb(233, 231, 231);
 }
@@ -50,13 +57,14 @@ article{
     margin-bottom: 1rem;
     width: 100%;
 }
+.cardNameConteiner{
+    width: 83%;
+    display: inline-block;
+}
 .cardName, .cardDate{
     font-size:.6rem;
     letter-spacing: .1rem;
     font-weight: 300;
-}
-.cardDate{
-    margin-left: 6.5rem;
 }
 .card_2_label{
     margin-top: 3.6rem;
@@ -68,7 +76,7 @@ article{
     width: 100%;
     height: 15rem;
 }
-/* .form{display: none;} */
+.formOff{display: none;}
 .form, .sect_3{
     padding: 5rem 1.2rem 2rem 1.2rem;
 }
@@ -106,10 +114,10 @@ input::placeholder{color: hsl(270, 3%, 87%);}
     width: 20.75rem;
     height: 3rem;
     margin-top: .5rem;
-    background: linear-gradient(to right,   hsl(249, 99%, 64%), hsl(278, 94%, 30%)   );
+    background: var(--borderColor);
     border-radius: .45rem;
     z-index: 10;
-    /* display: none; */
+    display: var(--visibleNumber);
   }
 .bigInput{width: 90%;}
 /*******************************************************/
@@ -121,7 +129,7 @@ input::placeholder{color: hsl(270, 3%, 87%);}
     color: hsl(0, 100%, 66%);
     font-size: .7rem;
     font-weight: 500;
-   /* display: none;  */
+   display:  none; 
 }
 #input_3{margin-bottom: .5rem;}
 #input_5{margin-bottom: .5rem;}
@@ -142,10 +150,10 @@ input::placeholder{color: hsl(270, 3%, 87%);}
     width: 4.56rem;
     height: 3rem;
     margin-top: .5rem;
-    background: linear-gradient(to right,   hsl(249, 99%, 64%), hsl(278, 94%, 30%)   );
+    background: var(--borderColor);
     border-radius: .45rem;
     z-index: 10;
-    /* display: none; */
+    display: var(--visibleNumber);
 }
 /******************************************************/
 
@@ -158,10 +166,10 @@ input::placeholder{color: hsl(270, 3%, 87%);}
     width: 4.6rem;
     height: 3rem;
     margin-top: .5rem;
-    background: linear-gradient(to right,   hsl(249, 99%, 64%), hsl(278, 94%, 30%)   );
+    background: var(--borderColor);
     border-radius: .45rem;
     z-index: 10;
-    /* display: none; */
+    display: var(--visibleNumber);
 }
 /******************************************************/
 /************border input CVC**************************/
@@ -173,10 +181,10 @@ input::placeholder{color: hsl(270, 3%, 87%);}
     width: 10.6rem;
     height: 3rem;
     margin-top: .5rem;
-    background: linear-gradient(to right,   hsl(249, 99%, 64%), hsl(278, 94%, 30%)   );
+    background: var(--borderColor);
     border-radius: .45rem;
     z-index: 10;
-    display: none;
+    display: var(--visibleNumber);
 }
 /******************************************************/
 
@@ -204,8 +212,8 @@ input::placeholder{color: hsl(270, 3%, 87%);}
     display: flex;
     flex-direction: column;
     align-items: center;
-    display: none;
 }
+.thanksOff{ display: none;}
 .thanks{
     margin-top: 3rem;
     font-size: 1.8rem;
@@ -235,7 +243,7 @@ input::placeholder{color: hsl(270, 3%, 87%);}
         background: url(./images/bg-main-desktop.png);
         height: 55.3rem;
     }
-    .form{
+    .form, .sect_3{
         width: 21.5rem;
         margin: 6rem 3rem 3rem 22vw ;
     }
@@ -263,8 +271,9 @@ input::placeholder{color: hsl(270, 3%, 87%);}
     .cardName, .cardDate, .card_2_label{
         font-size:.8rem;
     }
-    .cardDate{
-        margin-left: 45%;
+    .cardNameConteiner{
+        width: 83%;
+        display: inline-block;
     }
     .card_2_label{
         margin-top: 4.75rem;
@@ -291,8 +300,6 @@ input::placeholder{color: hsl(270, 3%, 87%);}
         width: 10.8rem;
         height: 3rem;
     }
-    /******************************************************/
-
     }
 
     @media (min-width: 1090px) {
@@ -309,7 +316,7 @@ input::placeholder{color: hsl(270, 3%, 87%);}
             background: url(./images/bg-main-desktop.png);
             height: 55.3rem;
         }
-        .form{
+        .form, .sect_3{
             width: 21.5rem;
             margin: 6rem 3rem 3rem 22vw ;
         }
@@ -337,8 +344,9 @@ input::placeholder{color: hsl(270, 3%, 87%);}
         .cardName, .cardDate, .card_2_label{
             font-size:.8rem;
         }
-        .cardDate{
-            margin-left: 45%;
+        .cardNameConteiner{
+            width: 83%;
+            display: inline-block;
         }
         .card_2_label{
             margin-top: 4.75rem;
