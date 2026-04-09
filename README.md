@@ -1,5 +1,8 @@
 # Interactive Card Details Form: Real-time DOM Synchronization
 
+> [!Note]
+>> This repository contains a legacy project from my early days as a programmer
+
 This project is a **historical practice** focused on complex form validation and real-time UI mirroring. It represents a major step in my development, combining advanced CSS decorative techniques with sophisticated JavaScript string manipulation to create a seamless user experience.
 
 ---
